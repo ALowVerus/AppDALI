@@ -11,7 +11,10 @@ permalink: /members.html
 	<div class="col-md-4">
 		<img src="http://mappy.dali.dartmouth.edu/{{ member.iconUrl }}" class="memberpic">
 		<h1>
-			{{ member.terms_on[0] }} -- {{ member.name }}
+			{% for term in member.terms_on %}
+			asdfasfda
+			{% endfor %}
+			{{ member.name }}
 			{% if member.project != "" %}
 			- {{ member.project }}
 			{% endif %}
