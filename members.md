@@ -22,7 +22,7 @@ permalink: /members.html
 			<a href="https://www.google.com/maps/@{{ member.lat_long }}"> 
 				Click here!
 			</a>
-		<p>
+		</p>
 		<p>
 			{% if member.url | 0, 1 == "//" %}
 			<a href="http://{{ member.url | 2,-1 }}">
