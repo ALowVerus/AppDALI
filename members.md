@@ -9,11 +9,9 @@ permalink: /members.html
 <div class="row">
 {% for member in site.data.members %}
 	<div class="col-md-4">
-		booop
 		<img src="http://mappy.dali.dartmouth.edu/{{ member.iconUrl }}" class="memberpic">
 		<h1>
 			{% for term in member.terms_on %}
-			asdfasfda
 			{% endfor %}
 			{{ member.name }}
 			{% if member.project != "" %}
@@ -27,7 +25,7 @@ permalink: /members.html
 			{% assign long = member.lat_long[1] %}
 			{% assign lat = lat | downcase %}
 			{% assign long = long | downcase %}
-			<a href="https://www.google.com/maps/@{{ lat_long }},{{ long }}"> 
+			<a href="https://www.google.com/maps/@{{ lat }},{{ long }}"> 
 				Click here!
 			</a>
 		</p>
