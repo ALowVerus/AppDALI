@@ -9,7 +9,7 @@ permalink: /members.html
 <div class="row">
 {% for member in site.data.members %}
 	<div class="col-md-4">
-		<img src="http://mappy.dali.dartmouth.edu/{{ member.iconUrl }}" class="memberpic">
+		<img src="http://mappy.dali.dartmouth.edu/{{ member.iconUrl }}" class="memberpic img-circle">
 		<h1>
 			{{ member.terms_on }} - {{ member.name }}
 			{% if member.project != "" %}
@@ -19,7 +19,7 @@ permalink: /members.html
 		<p>{{ member.message }}</p>
 		<p>
 			Find me on Google Maps!
-			<a href="https://www.google.com/maps/@{{ member.lat_long }}"> 
+			<a href="https://www.google.com/maps/@{{ member.lat_long | join: "," }}"> 
 				Click here!
 			</a>
 		</p>
