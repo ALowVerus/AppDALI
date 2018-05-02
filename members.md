@@ -19,8 +19,8 @@ permalink: /members.html
 		<p>{{ member.message }}</p>
 		<p>
 			Find me on Google Maps!
-			{% assign lat = member.latlong[0] %}
-			{% assign long = member.latlong[1] %}
+			{% assign lat = member.lat_long[0] %}
+			{% assign long = member.lat_long[1] %}
 			{% assign lat = lat | downcase %}
 			{% assign long = long | downcase %}
 			<a href="https://www.google.com/maps/@{{ lat }},{{ long }}"> 
