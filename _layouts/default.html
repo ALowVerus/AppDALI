@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+  {% include meta.html %}
+
+  <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  <link rel="stylesheet" type="text/css" href="{{ site.path }}/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml"
+  />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <script src="{{ site.path }}/js/jquery.min.js"></script>
+  <script src="{{ site.path }}/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  {% include nav-bar.html %}
+
+  <div class="container">
+    <div class="content">
+      {{ content }}
+    </div>
+  </div>
+  <!-- /.container -->
+
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">Website built using Jekyll-Bootstrap by <a href="https://github.com/the-prism">the-prism</a></span>
+    </div>
+  </footer>
+</body>
+
+</html>
