@@ -4,8 +4,8 @@ title: Members
 permalink: /members.html
 ---
 
-# members
 <div class="container">
+	<h1>Members of the DALI Lab</h1>
 	<div class="row">
 	{% for member in site.data.members %}
 		<div class="col-md-3 mx-auto">
