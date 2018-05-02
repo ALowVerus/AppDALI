@@ -16,9 +16,8 @@ permalink: /members.html
 				{{ term }} 
 			{% endfor %}
 			{% if member.project != [] %}
-			-
 				{% for item in member.project %}
-					{{ item }}
+					- {{ item }}
 				{% endfor %}
 			{% endif %}
 		</h2>
