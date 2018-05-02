@@ -7,7 +7,7 @@ permalink: /members.html
 # members
 
 <div class="row">
-{% for member in site.data.members %}
+{% for member in http://mappy.dali.dartmouth.edu/members %}
 	<div class="col-md-3 mx-auto">
 		<img src="http://mappy.dali.dartmouth.edu/{{ member.iconUrl }}" class="memberpic">
 		<h1>{{ member.name }}</h1>
