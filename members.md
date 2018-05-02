@@ -24,7 +24,7 @@ permalink: /members.html
 			{% assign lat = lat | downcase %}
 			{% assign long = long | downcase %}
 			<a href="https://www.google.com/maps/@{{ lat }},{{ long }}"> 
-				Click here! Boop!
+				Click here!
 			</a>
 		</p>
 		<p>
