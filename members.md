@@ -17,7 +17,7 @@ permalink: /members.html
 			{% endfor %}
 			{% if member.project != [] %}
 			-
-				{% for item in project %}
+				{% for item in member.project %}
 					{{ item }}
 				{% endfor %}
 			{% endif %}
