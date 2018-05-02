@@ -25,7 +25,7 @@ permalink: /members.html
     			</a>
     		<p>
     		<p>
-    			{% if {{ member.url | 0, 1 }} == "//" %}
+    			{% if member.url | 0, 1 == "//" %}
     			<a href="http://{{ member.url | 2,-1 }}">
     			{% else %}
     			<a href="{{ member.url }}">
