@@ -44,9 +44,9 @@ title: Home
           <div class="col-lg-6">
             <h4>Facts:</h4>
             <ul class="lead">
-              <li>I once ate three Chipotle Burritos in one sitting.</li>
-              <li>I can code in HTML, CSS, and JS.</li>
-              <li>I'm a dog person, not a cat person.</li>
+              <li>I once ate three Chipotle burritos in one sitting.</li>
+              <li>I can code in HTML, CSS, JS, and Python.</li>
+              <li>I can start a fire using only an orange.</li>
             </ul>
           </div>
         </div>
@@ -61,6 +61,7 @@ title: Home
             <ul>
               <li><a href="http://ndupress.ndu.edu">National Defense University Press</a></li>
               <li><a href="http://www.ger.co">GER.co</a></li>
+              <li><a href="http://www/makeroots.world">MakeRoots</a></li>
             </ul>
           </div>
           <div class="col-lg-6 col-md-4 mx-auto">

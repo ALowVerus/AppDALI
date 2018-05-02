@@ -10,19 +10,8 @@ permalink: /members.html
 	{% for member in site.data.members %}
 		<div class="col-md-3 mx-auto">
 			<img src="http://mappy.dali.dartmouth.edu/{{ member.iconUrl }}" class="memberpic">
-			<h1>{{ member.name }}</h1>
-			<h2>
-				{% for term in member.terms_on %}
-					{{ term }} 
-				{% endfor %}
-				{% if member.project != [] %}
-					{% for item in member.project %}
-						- {{ item }}
-					{% endfor %}
-				{% endif %}
-			</h2>
-			<p>{{ member.message }}</p>
-			<p>
+			<h1>
+				{{ member.name }}  
 				{% assign lat = member.lat_long[0] | downcase %}
 				{% assign long = member.lat_long[1] | downcase %}
 				<a href="https://www.google.com/maps/@{{ lat }},{{ long }},18z"> 
@@ -37,6 +26,20 @@ permalink: /members.html
 						<i class="fas fa-desktop"></i>
 					</a>
 				{% endif %}
+			</h1>
+			<h2>
+				{% for term in member.terms_on %}
+					{{ term }} 
+				{% endfor %}
+				{% if member.project != [] %}
+					{% for item in member.project %}
+						- {{ item }}
+					{% endfor %}
+				{% endif %}
+			</h2>
+			<p>{{ member.message }}</p>
+			<p>
+				
 			</p>
 		</div>
 	{% endfor %}
