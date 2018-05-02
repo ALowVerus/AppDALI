@@ -9,7 +9,7 @@ permalink: /members.html
 <div class="row">
 {% for member in site.data.members %}
 	<div class="col-md-4">
-		<img src="http://mappy.dali.dartmouth.edu/{{ member.iconUrl }}">
+		<img src="http://mappy.dali.dartmouth.edu/{{ member.iconUrl }}" class="memberpic">
 		<h1>
 			{{ member.terms_on }} - {{ member.name }}
 			{% if member.project != "" %}
