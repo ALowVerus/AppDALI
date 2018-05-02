@@ -24,15 +24,12 @@ permalink: /members.html
 		</h2>
 		<p>{{ member.message }}</p>
 		<p>
-			Find me on Google Maps!
 			{% assign lat = member.lat_long[0] | downcase %}
 			{% assign long = member.lat_long[1] | downcase %}
 			<a href="https://www.google.com/maps/@{{ lat }},{{ long }},18z"> 
 				<i class="fas fa-map-marker-alt"></i>
 			</a>
-		</p>
-		{% if member.url != "" %}
-			<p>
+			{% if member.url != "" %}
 				{% if member.url | 0, 1 == "//" %}
 				<a href="http://{{ member.url | 2,-1 }}">
 				{% else %}
@@ -40,8 +37,8 @@ permalink: /members.html
 				{% endif %}
 					<i class="fas fa-desktop"></i>
 				</a>
-			</p>
-		{% endif %}
+			{% endif %}
+		</p>
 	</div>
 {% endfor %}
 </div>
