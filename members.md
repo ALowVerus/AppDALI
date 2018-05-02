@@ -11,20 +11,20 @@ permalink: /members.html
 	<div class="col-md-4">
 		<img src="http://mappy.dali.dartmouth.edu/{{ member.iconUrl }}" class="memberpic">
 		<h1>
-			{% for term in member.terms_on %}
-			{% endfor %}
-			{{ member.name }}
-			{% if member.project != "" %}
+			{% for term in member.terms_on %}{{ term }} {% endfor %}
+			- {{ member.name }} 
+			{% if member.project != [""] %}
+				{% for item in project %}
+					{{ item }}
+				{% endfor %}
 			- {{ member.project }}
 			{% endif %}
 		</h1>
 		<p>{{ member.message }}</p>
 		<p>
 			Find me on Google Maps!
-			{% assign lat = member.lat_long[0] %}
-			{% assign long = member.lat_long[1] %}
-			{% assign lat = lat | downcase %}
-			{% assign long = long | downcase %}
+			{% assign lat = member.lat_long[0] | downcase %}
+			{% assign long = member.lat_long[1] | downcase %}
 			<a href="https://www.google.com/maps/@{{ lat }},{{ long }}"> 
 				Click here!
 			</a>
