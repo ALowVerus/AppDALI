@@ -101,7 +101,6 @@ title: Home
           <br><br><br><br><br>
           <h2>I do some art.</h2>
           <p class="lead"><b>I've worked with Blender, Photoshop, DAZ, Maya, and watercolors.</b></p>
-          <button class ="btn btn-info" onclick="off()">Look at the pretty pictures!</button>
         </div>
       </div>
     </div>
