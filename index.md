@@ -13,10 +13,10 @@ title: Home
         <br>
         <p class="lead" style="text-align:center;">and I like to code and eat Milanos.</p>
         <p style="font-size: 4rem; text-align: center;">
-          <a href="ALowResume11-17.docx" class="boxlink" style="font-size: 3.4rem;"><i class="fa fa-file-text iconlink" aria-hidden="true"></i></a>
-          <a href="http://www.facebook.com/Aidan.M.Low" class="boxlink"><i class="fa fa-facebook iconlink"></i></a>
-          <a href="http://www.linkedin.com/ALowVerus" class="boxlink"><i class="fa fa-linkedin iconlink"></i></a>
-          <a href="http://www.github.com/ALowVerus" class="boxlink"><i class="fa fa-github-square iconlink"></i></a>
+          <a href="ALowResume11-17.docx" class="boxlink" style="font-size: 3.4rem;"><i class="fas fa-file-alt iconlink" aria-hidden="true"></i></a>
+          <a href="http://www.facebook.com/Aidan.M.Low" class="boxlink"><i class="fab fa-facebook iconlink"></i></a>
+          <a href="http://www.linkedin.com/ALowVerus" class="boxlink"><i class="fab fa-linkedin iconlink"></i></a>
+          <a href="http://www.github.com/ALowVerus" class="boxlink"><i class="fab fa-github-square iconlink"></i></a>
         </p>
       </div>
       <div class="col-lg-4 col-sm-6 hidden-xs-down mx-auto">
